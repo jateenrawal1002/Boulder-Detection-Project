@@ -1,0 +1,12 @@
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.bmp
+Data/
+__pycache__/
+.venv/
+.vscode/
