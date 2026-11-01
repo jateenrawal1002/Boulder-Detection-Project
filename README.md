@@ -25,13 +25,15 @@ git clone [https://github.com/jateenrawal1002/Boulder-Detection-Project](https:/
 ```
 *Create and activate the virtual environment*
 ```bash 
-#Windows
-python -m venv venv venv\Scripts\activate
+#Windows (PowerShell) - tested on Python 3.9
+py -3.9 -m venv .venv-boulder --prompt boulder-detection
+.venv-boulder\Scripts\activate
 
 #macOS/Linux
-pyhton3 -m venv venv source venv/bin/activate
+python3 -m venv .venv-boulder --prompt boulder-detection
+source .venv-boulder/bin/activate
 ```
-*Install the requiremnents*
+*Install the requirements*
 
 ```bash
 pip install -r requirements.txt

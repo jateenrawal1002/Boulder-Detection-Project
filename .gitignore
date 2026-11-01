@@ -10,3 +10,5 @@ Data/
 __pycache__/
 .venv/
 .vscode/
+.venv-boulder/
+
