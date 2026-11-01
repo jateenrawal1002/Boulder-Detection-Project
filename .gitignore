@@ -6,7 +6,9 @@
 *.jpeg
 *.png
 *.bmp
-Data/
+# Data: large videos are downloaded separately (see README); the small frame images are kept in git
+Data/*
+!Data/*.png
 __pycache__/
 .venv/
 .vscode/

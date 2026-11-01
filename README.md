@@ -21,7 +21,8 @@ Impact Expoeriment Analysis in context to the HERA and DART Mission.
 
 ```bash
 #Clone the repository and access the file
-git clone [https://github.com/jateenrawal1002/Boulder-Detection-Project](https://github.com/jateenrawal1002/Boulder-Detection-Project)
+git clone https://github.com/jateenrawal1002/Boulder-Detection-Project.git
+cd Boulder-Detection-Project
 ```
 *Create and activate the virtual environment*
 ```bash 
@@ -39,7 +40,29 @@ source .venv-boulder/bin/activate
 pip install -r requirements.txt
 ```
 
+*Data setup*
+
+The experiment videos are too large for GitHub (1.3 GB and 3.5 GB), so they are stored separately.
+
+1. Download the videos from: **<!-- TODO: add download link -->**
+2. Place them in the `Data/` folder of the project. The three frame images are already included in the repository:
+```
+Boulder-Detection-Project/
+└── Data/
+    ├── Merengues-bowl_195bar_delrin_qs_vert.avi   (front view, 5000 fps) - download
+    ├── Merengues bowl1_C001S0001.avi              (top view, 500 fps)    - download
+    ├── Frames380.png                              (included)
+    ├── Frames1023.png                             (included)
+    └── Frames4000.png                             (included)
+```
+3. That's it, no paths need to be changed. All notebooks find their files through `Source/Main/paths.py`, which works out the project folder automatically. If a file is missing, the notebook stops with a message saying which file to download.
+
 **Usage**
+
+- Open the notebooks in `Source/Main/` and select the `.venv-boulder` interpreter / kernel.
+- Generated files are written automatically and do not need to be downloaded:
+  - `Output/` - processed videos and frame images
+  - `Results/` - CSV data (`Results/excel/frontview`, `Results/excel/topview`) and figures
 
 
 
