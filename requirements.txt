@@ -11,3 +11,6 @@ openpyxl==3.1.5    # used by pandas.read_excel
 
 # For running the notebooks in VS Code / Jupyter
 ipykernel==6.31.0
+
+# For download_data.py (fetches the videos from Google Drive)
+gdown==5.2.2
